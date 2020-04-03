@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.masnadh.myapppeg.activities.UbahActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEdDaata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:titleTextColor="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarEdDaata">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="14dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvPeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID. Pegawai"
+                android:textColor="#546e7a"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvIdPeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tvPers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="Data Peronal"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tvNamaEdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tvEditNip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Induk Pegawai"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edNip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewNuptk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NUPTK"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edNuptk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewStat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Kepegawaian"
+                android:textColor="#546e7a"/>
+
+            <Spinner
+                android:id="@+id/edStatusKepeg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_weight="10"
+                android:entries="@array/status_kepeg"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textViewKtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No. KTP / Identitas"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edKtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tempat Lahir"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edLahir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Lahir"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edtTgl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textColor="#546e7a"/>
+
+            <Spinner
+                android:id="@+id/edtAgama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:entries="@array/agama"
+                android:padding="10dp"
+                android:layout_weight="10"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textViewJK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="#546e7a"/>
+
+            <Spinner
+                android:id="@+id/edtJk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:layout_weight="10"
+                android:entries="@array/jenis_kelamin"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textViewGD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Golongan Darah"
+                android:textColor="#546e7a"/>
+
+            <Spinner
+                android:id="@+id/edtGolDarah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:layout_weight="10"
+                android:entries="@array/gol_darah"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textViewNikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status Pernikahan"
+                android:textColor="#546e7a"/>
+
+            <Spinner
+                android:id="@+id/edtNikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:layout_weight="10"
+                android:entries="@array/status_nikah"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/textViewAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edtAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:paddingBottom="20dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tvJaba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:text="Jabatan"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/textViewJab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jabatan"
+                android:textColor="#546e7a"/>
+
+            <EditText
+                android:id="@+id/edtJabApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="10dp"
+                android:paddingBottom="20dp"
+                android:background="@xml/input"
+                android:layout_marginBottom="10dp"
+                android:inputType="text"/>
+
+
+            <Button
+                android:id="@+id/updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Data"
+                android:background="@xml/button"
+                android:textColor="#fff"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

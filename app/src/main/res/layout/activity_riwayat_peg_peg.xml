@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/riwayat_id"
+    tools:context=".activities.RiwayatPegPegActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:titleTextColor="@android:color/white"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <FrameLayout
+        android:id="@+id/frame_layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_peg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileToolbar2"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_jab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jabatan" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_pangkat2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kepangkatan" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tab_layout_peg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager_peg">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

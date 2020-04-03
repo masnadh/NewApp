@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.masnadh.myapppeg">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".connections.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/smk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".tambahHapusData.DeletePangkatActivity"></activity>
+        <activity android:name=".tambahHapusData.TambahPangkatActivity" />
+        <activity android:name=".tambahHapusData.DeleteJabatanActivity" />
+        <activity android:name=".tambahHapusData.TambahJabatanActivity" />
+        <activity android:name=".activities.RiwayatPegPegActivity" />
+        <activity android:name=".activities.ProfileActivity" />
+        <activity android:name=".tambahHapusData.TambahAnakActivity" />
+        <activity android:name=".tambahHapusData.HapusPasutriActivity" />
+        <activity android:name=".activities.PasutriActivity" />
+        <activity android:name=".tambahHapusData.TambahPasutriActivity" />
+        <activity android:name=".activities.DeleteActivity" />
+        <activity android:name=".activities.TambahPendidikanActivity" />
+        <activity android:name=".adminActivies.AdminActivity" />
+        <activity android:name=".ListActivity" />
+        <activity android:name=".activities.TestActivity" />
+        <activity android:name=".activities.DataActivity" />
+        <activity android:name=".activities.AbsenActivity" />
+        <activity android:name=".activities.RombelActivity" />
+        <activity android:name=".activities.SKPActivity" />
+        <activity android:name=".activities.PendidikanActivity" />
+        <activity android:name=".activities.RiwayatPegActivity" />
+        <activity android:name=".activities.PendukungActivity" />
+        <activity android:name=".activities.UbahActivity" />
+        <activity android:name=".activities.RegisterActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

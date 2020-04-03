@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Aplikasi Kepegawaian</string>
+
+    <string name="hello_blank_fragment">Hello Home fragment</string>
+
+    <array name="menu_photo">
+        <item>@drawable/data</item>
+        <item>@drawable/edit</item>
+        <item>@drawable/pangkat</item>
+        <item>@drawable/pendidikan</item>
+        <item>@drawable/skp</item>
+        <item>@drawable/open</item>
+        <item>@drawable/rombel</item>
+        <item>@drawable/absen</item>
+
+    </array>
+
+    <array name="menu_name">
+        <item>Data Pegawai</item>
+        <item>Ubah Data</item>
+        <item>Riwayat Kepegawaian</item>
+        <item>Riwayat Pendidikan</item>
+        <item>Sasaran Kerja Pegawai</item>
+        <item>Dokumen Pendukung</item>
+        <item>Rombel dan Mapel</item>
+        <item>Absensi</item>
+    </array>
+
+    <string-array name="jenis_kelamin">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Laki-laki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="program_keahlian">
+        <item>Pilih Program Keahlian</item>
+        <item>AKUNTANSI</item>
+        <item>MULTIMEDIA</item>
+        <item>PERHOTELAN</item>
+        <item>TEKNIK KOMPUTER DAN JARINGAN</item>
+        <item>TATA BOGA</item>
+        <item>TEKNIK SEPEDA MOTOR</item>
+    </string-array>
+
+    <string-array name="agama">
+        <item>Pilih Agama</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Budha</item>
+        <item>Khong Hu Cu</item>
+    </string-array>
+
+    <string-array name="status_kepeg">
+        <item>Pilih Status Kepegawaian</item>
+        <item>PNS</item>
+        <item>NON PNS</item>
+    </string-array>
+
+    <string-array name="gol_darah">
+        <item>Pilih Golongan Darah</item>
+        <item>A</item>
+        <item>B</item>
+        <item>O</item>
+        <item>A/B</item>
+    </string-array>
+
+    <string-array name="status_nikah">
+        <item>Pilih Status Pernikahan</item>
+        <item>Nikah</item>
+        <item>Belum Nikah</item>
+        <item>Cerai</item>
+    </string-array>
+
+</resources>

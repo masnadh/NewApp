@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="id.masnadh.myapppeg"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="id.masnadh.myapppeg.connections.AppController"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/smk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.DeletePangkatActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahPangkatActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.DeleteJabatanActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahJabatanActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RiwayatPegPegActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.ProfileActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahAnakActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.HapusPasutriActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.PasutriActivity" />
+        <activity android:name="id.masnadh.myapppeg.tambahHapusData.TambahPasutriActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.DeleteActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.TambahPendidikanActivity" />
+        <activity android:name="id.masnadh.myapppeg.adminActivies.AdminActivity" />
+        <activity android:name="id.masnadh.myapppeg.ListActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.TestActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.DataActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.AbsenActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RombelActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.SKPActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.PendidikanActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RiwayatPegActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.PendukungActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.UbahActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.RegisterActivity" />
+        <activity android:name="id.masnadh.myapppeg.MainActivity" />
+        <activity android:name="id.masnadh.myapppeg.activities.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="id.masnadh.myapppeg.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

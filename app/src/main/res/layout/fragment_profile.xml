@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="id.masnadh.myapppeg.fragments.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/ic_people_black_24dp"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#FF000000"/>
+
+    <Button
+        android:id="@+id/btnPhoto"
+        style="@style/Widget.AppCompat.ActionButton.CloseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="Ganti Foto"/>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/btnPhoto"
+        android:weightSum="2"
+        android:id="@+id/layoutText"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_email_black_24dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="email" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/layoutText"
+        android:weightSum="2"
+        android:id="@+id/layoutText2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_smartphone_black_24dp"
+            android:layout_weight="1"
+            android:layout_width="70dp"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:id="@+id/phoneText"
+            android:layout_weight="1"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="email" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:background="@android:color/white"
+    tools:context="id.masnadh.myapppeg.activities.LoginActivity">
+
+    <ImageView
+        android:id="@+id/icon_login"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/smk"
+        android:background="#48FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="Login Simpeg"
+        android:gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@id/icon_login"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_app_name"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Username"
+            android:inputType="text"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_pass_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_user_login"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/edt_pass_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout_pass_log"
+        android:text="MASUK"
+        android:textColor="#fff"
+        android:background="@drawable/btn_rounded"/>
+
+    <TextView
+        android:id="@+id/link_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="30dp"
+        android:text="Tidak Punya Akun ? Daftar Disini"
+        android:textColor="@android:color/black"
+        android:gravity="center"/>
+
+    <ProgressBar
+        android:id="@+id/loading_log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

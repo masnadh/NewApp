@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="id.masnadh.myapppeg.activities.RegisterActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/edt_nip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIP"
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/layout_reg">
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama Lengkap"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@id/layout_name">
+
+        <EditText
+            android:id="@+id/edt_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Username"
+            android:inputType="textPersonName"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/layout_user">
+
+        <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layout_pwd_con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/layout_pwd">
+
+        <EditText
+            android:id="@+id/edt_pwd_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:background="#48FFFFFF"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/layout_pwd_con"
+        android:text="DAFTAR"
+        android:textColor="#fff"
+        android:background="@drawable/btn_rounded"/>
+
+    <ProgressBar
+        android:id="@+id/loading_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="30dp" />
+
+</RelativeLayout>

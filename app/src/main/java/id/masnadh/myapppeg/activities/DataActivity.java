@@ -110,27 +110,6 @@ public class DataActivity extends AppCompatActivity  {
             }
         });
 
-        // fotoProfile = (ImageView) findViewById(R.id.fotoProfile);
-
-
-//        Picasso.with(this).load("http://smknprigen.sch.id/bkk/image/default.png").into(fotoProfile);
-
-
-//        btneditdata = (Button) findViewById(R.id.btneditData);
-//        btneditdata.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                idu = getIntent().getStringExtra(TAG_ID);
-//                sharedpreferences = getSharedPreferences(LoginActivity.my_shared_preferences, Context.MODE_PRIVATE);
-//                session = sharedpreferences.getBoolean(LoginActivity.session_status, false);
-//                if (session) {
-//                    Intent profil = new Intent(DataActivity.this, UbahActivity.class);
-//                    profil.putExtra(TAG_ID, id);
-//                    startActivity(profil);
-//                }
-//            }
-//        });
-
         toolbar.setTitleTextColor(ContextCompat.getColor(this, R.color.white));
         getSupportActionBar().setTitle("Data Pegawai");
 

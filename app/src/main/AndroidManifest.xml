@@ -17,6 +17,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        //sss
         <activity android:name=".tambahHapusData.DeletePangkatActivity"></activity>
         <activity android:name=".tambahHapusData.TambahPangkatActivity" />
         <activity android:name=".tambahHapusData.DeleteJabatanActivity" />

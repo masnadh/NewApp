@@ -116,9 +116,9 @@ public class HomeFragment extends Fragment {
         nama = getActivity().getIntent().getStringExtra(TAG_NAME);
         nip = getActivity().getIntent().getStringExtra(TAG_NIP);
 
-        progressDialog = new ProgressDialog(HomeFragment.this.getActivity());
-        progressDialog.setMessage("Proses Pengambilan Data, Mohon Tunggu...");
-        progressDialog.show();
+//        progressDialog = new ProgressDialog(HomeFragment.this.getActivity());
+//        progressDialog.setMessage("Proses Pengambilan Data, Mohon Tunggu...");
+//        progressDialog.show();
 
         RequestQueue requestQueue = Volley.newRequestQueue(getActivity().getApplicationContext());
         StringRequest stringRequests =
